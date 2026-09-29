@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Останні новини</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Шапка */
+        header {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0 0 15px 0;
+            font-size: 22px;
+            color: #111;
+        }
+
+        nav a {
+            margin-right: 15px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Сітка для основної частини та сайдбару */
+        .main-layout {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        /* Секція з новинами */
+        section {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        article {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        article h2 {
+            margin: 0 0 8px 0;
+            font-size: 18px;
+            color: #111;
+        }
+
+        article time {
+            color: #888;
+            font-size: 13px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        article .author {
+            font-weight: bold;
+            color: #111;
+            margin-bottom: 0;
+        }
+
+        /* Бічна панель */
+        aside {
+            flex: 1;
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        aside h2 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            color: #111;
+        }
+
+        aside ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        aside a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Підвал */
+        footer {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       
+        <header>
+            <h1>Останні новини</h1>
+            <nav>
+                <a href="#">Головна</a>
+                <a href="#">Новини</a>
+                <a href="#">Контакти</a>
+            </nav>
+        </header>
+
+        
+        <div class="main-layout">
+            <main>
+                <section>
+                    <article>
+                        <h2>Відкрито новий кампус університету</h2>
+                        <time datetime="2026-09-01">1 вересня 2026</time>
+                        <p>Короткий текст новини про відкриття нового кампусу для студентів...</p>
+                        <p class="author">Автор: Ірина Коваль</p>
+                    </article>
+
+                    <article>
+                        <h2>Стартував конкурс студентських проєктів</h2>
+                        <time datetime="2026-09-05">5 вересня 2026</time>
+                        <p>Опис умов участі та термінів подачі заявок на конкурс...</p>
+                        <p class="author">Автор: Олег Петренко</p>
+                    </article>
+
+                    <article>
+                        <h2>Результати літньої практики</h2>
+                        <time datetime="2026-09-10">10 вересня 2026</time>
+                        <p>Короткий підсумок практики студентів у партнерських компаніях...</p>
+                        <p class="author">Автор: Марія Шевчук</p>
+                    </article>
+                </section>
+            </main>
+
+            
+            <aside>
+                <h2>Популярне</h2>
+                <ul>
+                    <li><a href="#">Новина 1</a></li>
+                    <li><a href="#">Новина 2</a></li>
+                    <li><a href="#">Новина 3</a></li>
+                    <li><a href="#">Новина 4</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        
+        <footer>
+            &copy; 2026 Останні новини &middot; Іван Петренко, гр. КН-21 &middot; <a href="mailto:ivan.petrenko@example.com">ivan.petrenko@example.com</a>
+        </footer>
+    </div>
+
+</body>
+</html>
