@@ -1,0 +1,226 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #222;
+    background-color: #f4f5f9;
+}
+
+ul { margin: 0; padding: 0; list-style: none; }
+a { text-decoration: none; color: inherit; }
+
+.material-icons { vertical-align: middle; }
+
+/* =====================================================
+   ГОРИЗОНТАЛЬНА ПАНЕЛЬ (fixed + float + sticky)
+   ===================================================== */
+.hnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    z-index: 100;
+    background-color: #1f2a44;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hnav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.hnav-list > li {
+    position: relative;
+    float: left;
+}
+
+.hnav-list > li:last-child {
+    float: right;
+}
+
+.hnav-list > li > a {
+    display: block;
+    width: 64px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #cfd6e8;
+}
+
+.hnav-list > li > a .material-icons { font-size: 28px; }
+
+.hnav-list > li:hover > a,
+.hnav-list > li:focus-within > a {
+    background-color: #33426b;
+    color: white;
+}
+
+.hnav-list > li.active > a {
+    background-color: #ffd166;
+    color: #1f2a44;
+}
+
+/* випадні списки */
+.hnav-sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: #2a3858;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hnav-list > li:last-child > .hnav-sub {
+    left: auto;
+    right: 0;
+}
+
+li:hover > .hnav-sub,
+li:focus-within > .hnav-sub {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hnav-sub li { position: relative; }
+
+.hnav-sub a {
+    display: block;
+    padding: 12px 16px;
+    color: #e5e9f5;
+    white-space: nowrap;
+}
+
+.hnav-sub li:hover > a,
+.hnav-sub li:focus-within > a {
+    background-color: #ffd166;
+    color: #1f2a44;
+}
+
+.hnav-sub li.active > a {
+    background-color: #06d6a0;
+    color: #1f2a44;
+}
+
+.hnav-sub .hnav-sub {
+    top: 0;
+    left: 100%;
+}
+
+.hnav-list > li:last-child .hnav-sub .hnav-sub {
+    left: auto;
+    right: 100%;
+}
+
+.hnav-sub .has-sub > a:after {
+    content: ' ▸';
+    float: right;
+}
+
+/* sticky-панель підрозділів */
+.snav {
+    position: sticky;
+    top: 56px;
+    z-index: 90;
+    background-color: #ffffff;
+    border-bottom: 3px solid #ffd166;
+}
+
+.snav:after { content: ''; display: block; clear: both; }
+
+.snav-list > li { float: left; }
+
+.snav-list a {
+    display: block;
+    padding: 14px 20px;
+    color: #1f2a44;
+}
+
+.snav-list a:hover { background-color: #fff1c9; }
+.snav-list .active a { background-color: #ffd166; font-weight: 700; }
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 76px 20px 40px;
+}
+
+.content--after-nav { padding-top: 20px; }
+
+.content p { line-height: 1.6; }
+
+/* =====================================================
+   ВЕРТИКАЛЬНА ПАНЕЛЬ (fixed, повна висота, 3 рівні)
+   ===================================================== */
+.vnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 230px;
+    height: 100%;
+    z-index: 100;
+    background-color: #1f2a44;
+}
+
+.vnav-list li { position: relative; }
+
+.vnav-list a {
+    display: block;
+    padding: 0 16px;
+    height: 52px;
+    line-height: 52px;
+    color: #cfd6e8;
+    white-space: nowrap;
+}
+
+.vnav-list a .material-icons {
+    margin-right: 14px;
+    font-size: 24px;
+}
+
+.vnav-list li:hover > a,
+.vnav-list li:focus-within > a {
+    background-color: #33426b;
+    color: white;
+}
+
+.vnav-list li.active > a {
+    background-color: #ffd166;
+    color: #1f2a44;
+}
+
+.vnav-sub {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 220px;
+    background-color: #2a3858;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+    box-shadow: 6px 0 12px rgba(0, 0, 0, 0.25);
+}
+
+.vnav-list li:hover > .vnav-sub,
+.vnav-list li:focus-within > .vnav-sub {
+    visibility: visible;
+    opacity: 1;
+}
+
+.vnav-sub a { height: 46px; line-height: 46px; }
+
+.vnav-list .has-sub > a:after {
+    content: '▸';
+    float: right;
+}
+
+.vcontent {
+    margin-left: 230px;
+    padding: 30px;
+}

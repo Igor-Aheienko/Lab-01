@@ -1,0 +1,59 @@
+/* 1. span усередині p.text-background: курсив, жирність, підкреслення */
+p.text-background span {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* 2. span усередині .text-background, який усередині div: жовтий фон */
+div .text-background span {
+  background-color: yellow;
+}
+
+/* 3. span усередині span: сірий фон, перекреслений текст */
+span span {
+  background-color: gray;
+  text-decoration: line-through;
+}
+
+/* 4. span усередині span усередині ol: 18px, верхній регістр */
+ol span span {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* 5. p, прямі діти section: тінь тексту і відступ першого рядка */
+section > p {
+  text-shadow: 3px 3px 5px red;
+  text-indent: 50px;
+}
+
+/* 6. ul, прямий нащадок li: маркер-зображення (галочка) */
+li > ul {
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path d='M2 8.5 6 12.5 14 3.5' fill='none' stroke='%23336699' stroke-width='2.5'/></svg>");
+}
+
+/* 7. p.text-background, прямі діти div: інтервал між словами 50px */
+div > p.text-background {
+  word-spacing: 50px;
+}
+
+/* 8. p, прямі діти div.text-bold: жирність */
+div.text-bold > p {
+  font-weight: bold;
+}
+
+/* 9. p, прямі діти section, який є прямим нащадком div.text-bold: міжрядковий інтервал 45px */
+div.text-bold > section > p {
+  line-height: 45px;
+}
+
+/* 10. p, що йде одразу після img: коричневий фон */
+img + p {
+  background-color: brown;
+}
+
+/* 11. усі p-сиблінги після section: червоний текст */
+section ~ p {
+  color: red;
+}

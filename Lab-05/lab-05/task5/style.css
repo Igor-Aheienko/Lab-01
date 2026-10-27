@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ---- Частина 1: box-sizing ---- */
+.s1 div {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #0d47a1;
+    margin: 20px;
+    background-color: #bbdefb;
+    vertical-align: top;
+}
+
+.s1 div:nth-of-type(1) {
+    box-sizing: content-box;
+    /* Загальна ширина: 300 + 2 * 20 + 2 * 5 = 350px */
+}
+
+.s1 div:nth-of-type(2) {
+    box-sizing: border-box;
+    /* Загальна ширина: 300px */
+}
+
+/* ---- Частина 2: overflow ---- */
+.s2 {
+    margin-bottom: 120px; /* місце для тексту, що виходить за межі блоку при visible */
+}
+
+.s2 div {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    max-height: 80px;
+    border: 2px solid #2e7d32;
+    margin: 0 20px 20px 0;
+}
+
+.s2 div:nth-of-type(1) { overflow: visible; }
+.s2 div:nth-of-type(2) { overflow: hidden; }
+.s2 div:nth-of-type(3) { overflow: scroll; }
+.s2 div:nth-of-type(4) { overflow: auto; }
+
+/* ---- Частина 3: display ---- */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #455a64;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #263238;
+}
+
+/* Приховуємо 4-й пункт меню
+   display: none повністю видаляє елемент з потоку документа: він не займає місця,
+   сусідні пункти зсуваються, а скрінрідери його не озвучують.
+   На відміну від цього visibility: hidden та opacity: 0 лишають порожнє місце
+   (елемент залишається в потоці), а position: absolute з виведенням за екран
+   залишає елемент доступним для скрінрідерів. */
+nav li:nth-child(4) {
+    display: none;
+}

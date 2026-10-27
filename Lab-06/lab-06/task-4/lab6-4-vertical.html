@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вертикальна навігація</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="vnav">
+        <ul class="vnav-list">
+            <li class="active">
+                <a href="#"><span class="material-icons">home</span>Головна</a>
+            </li>
+            <li class="has-sub">
+                <a href="#"><span class="material-icons">school</span>Курси</a>
+                <ul class="vnav-sub">
+                    <li class="has-sub"><a href="#">Frontend</a>
+                        <ul class="vnav-sub">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"><a href="#">Backend</a>
+                        <ul class="vnav-sub">
+                            <li><a href="#">Node.js</a></li>
+                            <li><a href="#">PHP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Бази даних</a></li>
+                </ul>
+            </li>
+            <li class="has-sub">
+                <a href="#"><span class="material-icons">menu_book</span>Матеріали</a>
+                <ul class="vnav-sub">
+                    <li><a href="#">Лекції</a></li>
+                    <li class="has-sub"><a href="#">Лабораторні</a>
+                        <ul class="vnav-sub">
+                            <li><a href="#">Лаб. 5</a></li>
+                            <li><a href="#">Лаб. 6</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Література</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="material-icons">event</span>Календар</a>
+            </li>
+            <li>
+                <a href="#"><span class="material-icons">mail</span>Повідомлення</a>
+            </li>
+            <li class="has-sub">
+                <a href="#"><span class="material-icons">settings</span>Налаштування</a>
+                <ul class="vnav-sub">
+                    <li><a href="#">Профіль</a></li>
+                    <li><a href="#">Безпека</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="vcontent">
+        <h1>Вертикальна панель навігації</h1>
+        <p>Панель зафіксована (<code>position: fixed</code>) зліва на повну висоту вікна. Підменю відкриваються праворуч, передбачено три рівні вкладеності (наприклад: Курси → Frontend → CSS).</p>
+    </main>
+</body>
+</html>

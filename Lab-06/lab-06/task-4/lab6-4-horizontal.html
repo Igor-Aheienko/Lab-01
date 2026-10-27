@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горизонтальна навігація</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="hnav">
+        <ul class="hnav-list">
+            <li class="active">
+                <a href="#" title="Головна"><span class="material-icons">home</span></a>
+            </li>
+            <li class="has-sub">
+                <a href="#" title="Курси"><span class="material-icons">school</span></a>
+                <ul class="hnav-sub">
+                    <li class="has-sub"><a href="#">Frontend</a>
+                        <ul class="hnav-sub">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"><a href="#">Backend</a>
+                        <ul class="hnav-sub">
+                            <li><a href="#">Node.js</a></li>
+                            <li><a href="#">PHP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Бази даних</a></li>
+                </ul>
+            </li>
+            <li class="has-sub">
+                <a href="#" title="Матеріали"><span class="material-icons">menu_book</span></a>
+                <ul class="hnav-sub">
+                    <li><a href="#">Лекції</a></li>
+                    <li><a href="#">Лабораторні</a></li>
+                    <li><a href="#">Література</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="Календар"><span class="material-icons">event</span></a>
+            </li>
+            <li>
+                <a href="#" title="Повідомлення"><span class="material-icons">mail</span></a>
+            </li>
+            <li class="has-sub">
+                <a href="#" title="Профіль"><span class="material-icons">account_circle</span></a>
+                <ul class="hnav-sub">
+                    <li><a href="#">Налаштування</a></li>
+                    <li class="has-sub"><a href="#">Мова</a>
+                        <ul class="hnav-sub">
+                            <li><a href="#">Українська</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Вийти</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Горизонтальна панель навігації</h1>
+        <p>Панель зафіксована (<code>position: fixed</code>) у верхній частині сторінки. Останній пункт вирівняно праворуч через <code>float: right</code>.</p>
+    </main>
+
+    <nav class="snav">
+        <ul class="snav-list">
+            <li class="active"><a href="#">Огляд</a></li>
+            <li><a href="#">Розклад</a></li>
+            <li><a href="#">Оцінки</a></li>
+            <li><a href="#">Підтримка</a></li>
+        </ul>
+    </nav>
+
+    <main class="content content--after-nav">
+        <h2>«Липка» панель (position: sticky)</h2>
+        <p>Прокрутіть сторінку: панель вище спочатку розташована у потоці, а потім «прилипає» під головною панеллю.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </main>
+</body>
+</html>

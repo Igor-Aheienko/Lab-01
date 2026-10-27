@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Попап</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <header class="header">
+        <h1 class="header-title">Попап на HTML і CSS</h1>
+
+        <div class="popup-wrapper">
+            <!-- Стан 1/2: прихований checkbox-кнопка відкриває/закриває попап -->
+            <input class="popup-button" type="checkbox" aria-label="Відкрити меню застосунків" tabindex="0">
+
+            <div class="popup" tabindex="0">
+                <div class="popup-grid">
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #ea4335">mail</span>
+                    <span class="popup-label">Gmail</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #fbbc04">drive_file_move</span>
+                    <span class="popup-label">Drive</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #34a853">map</span>
+                    <span class="popup-label">Maps</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #ea4335">photo_library</span>
+                    <span class="popup-label">Photos</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #d93025">smart_display</span>
+                    <span class="popup-label">YouTube</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #4285f4">calendar_month</span>
+                    <span class="popup-label">Calendar</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #4285f4">description</span>
+                    <span class="popup-label">Docs</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #0f9d58">call</span>
+                    <span class="popup-label">Meet</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #0f9d58">chat</span>
+                    <span class="popup-label">Chat</span>
+                </a>
+                </div>
+                <!-- Стан 3: кнопка More додає іконки та вмикає прокручування -->
+                <input class="more-button" type="checkbox" aria-label="Показати більше" tabindex="0">
+                <div class="popup-grid popup-grid--extra">
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #4285f4">translate</span>
+                    <span class="popup-label">Translate</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #fbbc04">shopping_bag</span>
+                    <span class="popup-label">Shopping</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #5f6368">newspaper</span>
+                    <span class="popup-label">News</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #ea4335">music_note</span>
+                    <span class="popup-label">Music</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #9334e6">videocam</span>
+                    <span class="popup-label">Video</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #4285f4">cloud</span>
+                    <span class="popup-label">Cloud</span>
+                </a>
+                <a class="popup-item" href="#">
+                    <span class="material-icons popup-icon" style="color: #1a73e8">book</span>
+                    <span class="popup-label">Books</span>
+                </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

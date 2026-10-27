@@ -1,0 +1,48 @@
+/* Одна колірна гама (червоно-рожева): від найсвітлішого до найтемнішого.
+   Класи та ідентифікатори не використовуються. */
+body {
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+th, td {
+    border: 2px solid #fff;
+    padding: 0 10px;
+}
+
+/* Заголовок таблиці */
+thead th {
+    height: 80px;
+    width: 150px;
+    color: #fff;
+    font-size: 18px;
+}
+
+thead th:nth-child(1) { background-color: #f2dcdb; font-size: 14px; }
+thead th:nth-child(2) { background-color: #e6b8b7; }
+thead th:nth-child(3) { background-color: #d99694; }
+thead th:nth-child(4) { background-color: #953735; }
+thead th:nth-child(5) { background-color: #632523; }
+
+/* Перший стовпець */
+tbody th {
+    height: 65px;
+    background-color: #c0504d;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Комірки з даними: рядки, що чергуються */
+tbody td {
+    font-size: 20px;
+    color: #444;
+}
+
+tbody tr:nth-child(odd) td  { background-color: #e6b8b7; }
+tbody tr:nth-child(even) td { background-color: #f2dcdb; }

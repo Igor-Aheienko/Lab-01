@@ -1,0 +1,70 @@
+/* Селектори тегів */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border: 1px solid #5b4fcf;
+  padding: 10px 20px;
+  max-width: 950px;
+  margin: 10px auto;
+}
+
+h1 {
+  color: red;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 20px 0 15px;
+}
+
+p {
+  margin: 0;
+}
+
+strong {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+hr {
+  width: 62%;
+  height: 6px;
+  background-color: green;
+  border: none;
+  margin: 20px auto;
+}
+
+/* Селектори класів */
+.item {
+  line-height: 1.15;
+}
+
+.amount {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+/* Селектор ідентифікатора */
+#footer-text {
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.3;
+}
